@@ -24,6 +24,7 @@ const Login = () => {
   const dispatch = useDispatch();
 
   const handleLogar = ({ user }) => {
+    setMsgTipo();
     signInWithEmailAndPassword(auth, email, password)
         .then(resultado => {
             setMsgTipo("sucesso");
